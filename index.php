@@ -14,7 +14,7 @@ if (isset($_POST["update"]))
 // ------------------------------------------------------------------------------------------------
 
 $page_vars = array();
-$page_vars["head_string"] = "<script type=\"text/javascript\" src=\"global/scripts/text_override.js\"></script>";
+$page_vars["head_string"] = "<script type=\"text/javascript\" src=\"global/scripts/text_override.js?v=2\"></script>";
 $page_vars["overridden_strings"] = text_override_get_strings();
 
 ft_display_module_page("templates/index.tpl", $page_vars);

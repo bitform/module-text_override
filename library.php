@@ -33,7 +33,6 @@ function text_override_update_strings($info)
   global $g_table_prefix, $L;
 
   $info = ft_sanitize($info);
-
   $num_rows     = $info["num_rows"];
   $deleted_rows = explode(",", $info["deleted_rows"]);
 
