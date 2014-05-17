@@ -101,7 +101,8 @@ function text_override__install($module_id)
      lang_placeholder VARCHAR(255) NOT NULL,
      original_string MEDIUMTEXT NOT NULL,
      overridden_string MEDIUMTEXT NOT NULL
-    ) TYPE=MyISAM";
+    )
+  ";
 
   foreach ($queries as $query)
   {
