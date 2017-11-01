@@ -22,6 +22,6 @@ $L["word_help"] = "Help";
 $L["phrase_overridden_string"] = "Overridden String";
 
 $L["text_module_summary"] = "This module lets you overrides any text found in the main Form Tools language file. This includes virtually all text that appears in the user interface, other than modules.";
-$L["text_help"] = "Please see our <a href=\"http://modules.formtools.org/text_override/documentation.php\" target=\"_blank\">online help documentation</a> for information on how to use this module.";
+$L["text_help"] = "Please see our <a href=\"https://docs.formtools.org/modules/text_override/\" target=\"_blank\">online help documentation</a> for information on how to use this module.";
 
 $L["notify_strings_updated"] = "The list of overridden strings has been updated.";
