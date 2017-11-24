@@ -37,15 +37,8 @@ $HOOKS = array(
     array(
         "hook_type"       => "code",
         "action_location" => "main",
-        "function_name"   => "ft_display_page",
-        "hook_function"   => "text_override_replace",
-        "priority"        => "50"
-    ),
-    array(
-        "hook_type"       => "code",
-        "action_location" => "main",
-        "function_name"   => "ft_display_module_page",
-        "hook_function"   => "text_override_replace",
+        "function_name"   => "FormTools\\Themes::displayPage",
+        "hook_function"   => "replaceStrings",
         "priority"        => "50"
     )
 );
