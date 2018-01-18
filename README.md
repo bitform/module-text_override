@@ -4,9 +4,12 @@ This module lets you change the text for virtually any language string that appe
 
 ### Documentation
 
-[https://docs.formtools.org/modules/text_override/](https://docs.formtools.org/modules/text_override/)
+- [https://docs.formtools.org/modules/text_override/](https://docs.formtools.org/modules/text_override/)
 
-### Form Tools Extensions
 
-For further information about Form Tools modules, check out:
-[https://modules.formtools.org](https://modules.formtools.org)
+### Other Links
+
+- [Available Form Tools modules](https://modules.formtools.org/)
+- [About Form Tools modules](https://docs.formtools.org/userdoc/modules/) 
+- [Installation instructions](https://docs.formtools.org/userdoc/modules/installing/)
+- [Upgrading](https://docs.formtools.org/userdoc/modules/upgrading/)
