@@ -15,8 +15,8 @@ class Module extends FormToolsModule
     protected $author = "Ben Keen";
     protected $authorEmail = "ben.keen@gmail.com";
     protected $authorLink = "https://formtools.org";
-    protected $version = "2.0.1";
-    protected $date = "2017-11-23";
+    protected $version = "2.0.2";
+    protected $date = "2018-01-30";
     protected $originLanguage = "en_us";
 
     protected $jsFiles = array("scripts/text_override.js");
@@ -44,10 +44,7 @@ class Module extends FormToolsModule
             return array(false, "Failed Query: " . $e->getMessage());
         }
 
-        // This adds the POTENTIAL for the module to be called in those functions. The text_override_replace function
-        // does the job of processing the user-defined list of parsing rules, as entered via the UI. If there are no
-        // rules, nothing happens
-        Hooks::registerHook("code", "text_override", "main", "FormTools\\Themes::displayPage", "replaceStrings");
+        $this->resetHooks();
 
         return array(true, "");
     }
@@ -60,6 +57,22 @@ class Module extends FormToolsModule
         $db->execute();
 
         return array(true, "");
+    }
+
+
+    public function upgrade($module_id, $old_module_version)
+    {
+        $this->clearHooks();
+        $this->resetHooks();
+    }
+
+
+    public function resetHooks()
+    {
+        // This adds the POTENTIAL for the module to be called in those functions. The text_override_replace function
+        // does the job of processing the user-defined list of parsing rules, as entered via the UI. If there are no
+        // rules, nothing happens
+        Hooks::registerHook("code", "text_override", "main", "FormTools\\Themes::displayPage", "replaceStrings");
     }
 
 
